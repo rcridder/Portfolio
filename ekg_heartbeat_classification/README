@@ -1,0 +1,32 @@
+Heartbeat Classification Project
+Holden Bridge & Rose Ridder
+questions on these scripts may be directed via email to:
+hbride1@swarthmore.edu or rridder1@swarthmore.edu
+
+Instructions on how to run the code:
+
+- Save the csv data files from https://www.kaggle.com/shayanfazeli/heartbeat#mitbih_test.csv
+titled mitbih_test and mitbih_train.
+
+- We set up variables called scratchfilepath, train_filename, and test_filename on lines 13-15.
+This allowed us to access the data by writing scratchfilepath+train_filename, and test
+the network using data from scratchfilepath+test_filename.
+Lines 13-15 must be updated to include the paths you have used in downloading.
+The important thing here is that the correct path to the data set is given when
+creating the test_data and train_data.
+
+- Make sure that the machine contains all of the software packages needed to use Keras.
+Machines with GPU's are ideal.
+
+- To create a network you can use the following command line
+python3 heartbeat_network.py
+This will save a model with the name "StandardModel_50_epochs.h5". You can change the
+name of the model if desired by typing another name as an additional command line argument.
+
+- To create a confusion matrix of a model you can use the following command line
+python3 evaluateModel.py <name_of_your_model.h5>
+
+- The file plotbeats.py was used to assist us in the creation of visual materials
+for our presentation. There should be no need to run this file.
+
+- All other files are .h5(models), .png(images), or .csv(data).
